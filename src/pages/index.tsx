@@ -7,6 +7,10 @@ import { useGameState } from '../utils/gameState';
 import { REGIONS, HOVER_ZONES, INK_ZONES } from '../utils/constants';
 import styles from '../styles/Home.module.css';
 
+import { register } from '../components/HoverZone';
+useEffect(() => { console.log('Regions Hovered Upon:', register);}, []);
+
+
 export default function Home() {
   const { litRegions, lightUpRegion, isGameComplete, lensType, unlockUVLens, allRegionsLit } = useGameState();
   const [showTextChallenge, setShowTextChallenge] = useState(false);
@@ -108,7 +112,9 @@ export default function Home() {
             message={zone.message}
             region={zone.region}
             onComplete={(regionId) => lightUpRegion(regionId)}
-            active={true}
+            active={register.length > 3} // Active if register length is more than 3
+  
+            //active={true}
             //active={hoveredSequence.length > 1}  /* Active condition based on hovered sequence length */
           />
         ))}
