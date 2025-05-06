@@ -38,8 +38,8 @@ const TextChallenge: React.FC<TextChallengeProps> = ({ onComplete, className }) 
   
   return (
     <div className={`${styles.textChallenge} ${className || ''}`}>
-      <h3>Constellation Alignment</h3>
-      <p>Enter the name of the constellation revealed by the stars:</p>
+      <h3>Final Challenge</h3>
+      <p>Based on the secret riddles answer the quesion</p>
       
       <form onSubmit={handleSubmit}>
         <input
