@@ -122,7 +122,7 @@ export const RIDDLE_ZONES = [
     y: 10, 
     width: 22, 
     height: 32, 
-    riddle: "I’m a traveler through space and time, though I appear only in the mind. In my presence, gravity bends, and the very fabric of space-time ends. What am I?", 
+    riddle: "I am a traveler through space and time, though I appear only in the mind. In my presence, gravity bends, and the very fabric of space-time ends. What am I?", 
     answer: "black hole",
     requiredPlanets: ['mercury', 'venus', 'earth', 'mars', 'jupiter','saturn'] // Second after 5 planets
 
@@ -134,8 +134,8 @@ export const RIDDLE_ZONES = [
     y: 60, 
     width: 22, 
     height: 32, 
-    riddle: "My belt consists of three bright stars in a row. What celestial hunter am I?", 
-    answer: "orion",
+    riddle: "I am not a star, but I light up the sky. I’m a traveler from beyond, zooming by. What am I?", 
+    answer: "comet",
     requiredPlanets: ['mercury', 'venus', 'earth'] // First riddle appears after 3 inner planets
 
   },
@@ -146,8 +146,8 @@ export const RIDDLE_ZONES = [
     y: 35, 
     width: 22, 
     height: 32, 
-    riddle: "Named for a Greek mythological hunter, I contain the stars Betelgeuse and Rigel. Who am I?", 
-    answer: "orion",
+    riddle: "I’m a big rock in space, and I orbit the Sun. Sometimes I’m near Earth, making people run. What am I?", 
+    answer: "asteroid",
     requiredPlanets: ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'neptune','pluto'] // After 7 planets
   },
 ];
@@ -196,7 +196,7 @@ export const LENS_ZONES = [
     width: 15,
     height: 10,
     requiredLens: 'uv',
-    message: 'Riddle 1'
+    message: 'I shine brightly, lighting the way,But vanish entirely at the start of the day.What am I?'
   },
   {
     id: 'lens2',
@@ -206,9 +206,9 @@ export const LENS_ZONES = [
     width: 15,
     height: 10,
     requiredLens: 'uv',
-    message: 'Riddle 2'
+    message: 'I am round and bright in the dark of the night,Though I borrow my glow, I’m a beautiful sight.What am I?'
   },
 ];
 
 // Final answer for the text challenge
-export const TEXT_CHALLENGE_ANSWER = 'ORION';
+export const TEXT_CHALLENGE_ANSWER = 'moon';
