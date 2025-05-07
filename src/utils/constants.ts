@@ -211,4 +211,4 @@ export const LENS_ZONES = [
 ];
 
 // Final answer for the text challenge
-export const TEXT_CHALLENGE_ANSWER = 'moon';
+export const TEXT_CHALLENGE_ANSWER = 'MOON';
